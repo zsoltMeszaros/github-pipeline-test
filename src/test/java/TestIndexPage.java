@@ -2,12 +2,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class IndexPageTests extends BaseTest{
+public class TestIndexPage extends BaseTest{
 
     private IndexPage indexPage = new IndexPage(driver);
 
     @Test
-    void indexPageTitle(){
+    void testIndexPageTitle(){
         final String expectedTitle = "Wikipedia";
 
         final String pageTitle = indexPage.getPageTitle();
